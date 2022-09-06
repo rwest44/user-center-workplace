@@ -11,6 +11,8 @@ import com.ck.usercenter.model.domain.User;
 import com.ck.usercenter.model.domain.UserTeam;
 import com.ck.usercenter.model.dto.TeamQuery;
 import com.ck.usercenter.model.enums.TeamStatusEnum;
+import com.ck.usercenter.model.vo.TeamUserVO;
+import com.ck.usercenter.model.vo.UserVO;
 import com.ck.usercenter.service.TeamService;
 import com.ck.usercenter.service.UserService;
 import com.ck.usercenter.service.UserTeamService;
@@ -116,7 +118,7 @@ public class TeamServiceImpl extends ServiceImpl<TeamMapper, Team>
         return teamId;
     }
 
-    @Override
+
     public List<TeamUserVO> listTeams(TeamQuery teamQuery, boolean isAdmin) {
         QueryWrapper<Team> queryWrapper = new QueryWrapper<>();
         // 组合查询条件
