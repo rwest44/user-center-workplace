@@ -11,6 +11,8 @@ import com.ck.usercenter.model.domain.User;
 import com.ck.usercenter.model.domain.UserTeam;
 import com.ck.usercenter.model.dto.TeamQuery;
 import com.ck.usercenter.model.enums.TeamStatusEnum;
+import com.ck.usercenter.model.request.TeamJoinRequest;
+import com.ck.usercenter.model.request.TeamUpdateRequest;
 import com.ck.usercenter.model.vo.TeamUserVO;
 import com.ck.usercenter.model.vo.UserVO;
 import com.ck.usercenter.service.TeamService;

@@ -4,6 +4,8 @@ import com.ck.usercenter.model.domain.Team;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ck.usercenter.model.domain.User;
 import com.ck.usercenter.model.dto.TeamQuery;
+import com.ck.usercenter.model.request.TeamJoinRequest;
+import com.ck.usercenter.model.request.TeamUpdateRequest;
 import com.ck.usercenter.model.vo.TeamUserVO;
 
 import java.util.List;
@@ -36,4 +38,13 @@ public interface TeamService extends IService<Team> {
      */
     boolean updateTeam(TeamUpdateRequest teamUpdateRequest, User loginUser);
 
-}
+    /**
+     * 加入队伍
+     * @param teamJoinRequest
+     * @param loginUser
+     * @return
+     */
+    boolean joinTeam(TeamJoinRequest teamJoinRequest, User loginUser);
+
+
+    }
